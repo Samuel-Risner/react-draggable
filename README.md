@@ -33,9 +33,7 @@ export default function App() {
         elHeight={ 40 }
         elGap={ 10 }
 
-        containerStyle={{
-          gap: 20
-        }}
+        containerStyle={{}}
 
         elStyle={{
           width: 60, height: 60,
