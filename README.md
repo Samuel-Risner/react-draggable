@@ -1,4 +1,4 @@
-# React Draggable
+# React Draggable Grid
 
 Simple react component to implement a grid with draggable elements
 
