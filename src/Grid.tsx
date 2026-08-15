@@ -2,7 +2,7 @@ import React, { useRef, type ReactNode } from "react";
 import { BASE_CONTAINER_STYLE } from "./baseStyle";
 import GridElement from "./GridElement";
 import type { T_Source, T_Grid, T_KeyGrid, T_Target } from "./types";
-import { getReportData, moveZtoBackground, resetTransform, revertZ, setTransform, switchArray2D } from "./helpers";
+import { calculateGridHeight, calculateGridWidth, getReportData, moveZtoBackground, resetTransform, revertZ, setTransform, switchArray2D } from "./helpers";
 
 export default function Grid(
   {
@@ -111,7 +111,7 @@ export default function Grid(
 
   return (    
     <div
-      style={{ ...containerStyle, ...BASE_CONTAINER_STYLE }}
+      style={{ width: calculateGridWidth(grid, elWidth, elGap), height: calculateGridHeight(grid, elHeight, elGap), ...containerStyle, ...BASE_CONTAINER_STYLE }}
       ref={ containerEl }
     >
 

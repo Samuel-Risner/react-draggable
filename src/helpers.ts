@@ -43,3 +43,18 @@ export function moveZtoBackground(el: HTMLDivElement): void {
 export function revertZ(el: HTMLDivElement): void {
     el.style.zIndex = "0";
 }
+
+export function calculateGridWidth(grid: T_Grid, elWidth: number, elGap: number): string {
+    if (grid.length === 0) return "0px"; // no rows
+    const w = grid[0].length;
+    if (w === 0) return "0px"; // empty row
+
+    return `${w*elWidth + (w-1)*elGap}px`;
+}
+
+export function calculateGridHeight(grid: T_Grid, elHeight: number, elGap: number): string {
+    const h = grid.length;
+    if (h === 0) return "0px"; // no rows
+
+    return `${h*elHeight + (h-1)*elGap}px`;
+}
