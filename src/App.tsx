@@ -1,6 +1,5 @@
 import { useState } from "react";
-import Grid from "./draggable/Grid";
-import type { T_Grid } from "./draggable/types";
+import { Grid, type T_Grid } from "react-draggable";
 
 export default function App() {
   const [grid, setGrid] = useState<T_Grid>([
