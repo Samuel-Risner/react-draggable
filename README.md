@@ -6,7 +6,7 @@ Simple react component to implement a grid with draggable elements
 
 ```ts
 import { useState } from "react";
-import { Grid, type T_Grid, type T_KeyGrid } from "react-draggable";
+import { Grid, type T_Grid, type T_KeyGrid } from "react-draggable-grid";
 
 export default function App() {
   const [grid, setGrid] = useState<T_Grid>([
