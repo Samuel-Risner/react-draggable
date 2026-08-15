@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-draggable": "file:../react-draggable/react-draggable-0.0.0.tgz"
+    "react-draggable-grid": "file:../react-draggable/react-draggable-grid-1.0.2.tgz"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",
