@@ -38,7 +38,7 @@ export default function Grid(
       if (source.current === null) return;
       if (containerEl.current === null) return;
 
-      console.log("MOVE");
+      // console.log("MOVE");
 
       const rect = containerEl.current.getBoundingClientRect();
 
@@ -50,7 +50,7 @@ export default function Grid(
     }
 
     const up = () => {
-      console.log("UP");
+      // console.log("UP");
 
       window.removeEventListener("pointerup", up);
       window.removeEventListener("pointermove", move);
@@ -59,13 +59,13 @@ export default function Grid(
 
       // no target selected -> return to original position
       if (target.current === null) {
-        console.log("NO TARGET SELECTED");
+        // console.log("NO TARGET SELECTED");
 
         resetTransform(source.current.el);
 
       // target set -> switch
       } else {
-        console.log("SWITCHING");
+        // console.log("SWITCHING");
   
         switchArray2D(grid, source.current.row, source.current.col, target.current.row, target.current.col);
         resetTransform(source.current.el);
@@ -91,7 +91,7 @@ export default function Grid(
       if (source.current.el === t.el) return;
     }
 
-    console.log("SET TARGET");
+    // console.log("SET TARGET");
 
     target.current = t;
   }
@@ -104,7 +104,7 @@ export default function Grid(
       if (source.current.el === el) return;
     }
 
-    console.log("UNSET TARGET");
+    // console.log("UNSET TARGET");
 
     target.current = null;
   }
