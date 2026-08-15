@@ -1,6 +1,6 @@
 {
   "name": "react-draggable-grid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.",
   "homepage": "https://github.com/Samuel-Risner/react-draggable#readme",
   "bugs": {
