@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Grid, type T_Grid } from "react-draggable";
+import { Grid, type T_Grid, type T_KeyGrid } from "react-draggable";
 
 export default function App() {
   const [grid, setGrid] = useState<T_Grid>([
@@ -11,7 +11,7 @@ export default function App() {
     [null, <div key="11">11</div>],
   ]);
 
-  const reportChanges = (newGrid: T_Grid) => {
+  const reportChanges = (newGrid: T_Grid, keyGrid: T_KeyGrid) => {
     // updateBackend(keyGrid)
     setGrid(newGrid);
   }
