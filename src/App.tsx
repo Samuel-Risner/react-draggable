@@ -29,7 +29,6 @@ export default function App() {
         containerStyle={{}}
 
         elStyle={{
-          width: 60, height: 60,
           backgroundColor: "green"
         }}
       />
